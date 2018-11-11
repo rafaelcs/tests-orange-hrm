@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "env/bin/python3.7",
+    "python.linting.pylintEnabled": false,
+    "editor.fontSize": 14,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "geckodriver.log": true,
+        ".pytest_cache": true
+    }
+}
