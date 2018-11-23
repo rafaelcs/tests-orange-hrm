@@ -1,6 +1,7 @@
 from pages.base.base_page import BasePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+import time
 
 class LoginPage(BasePage):
 
@@ -8,6 +9,7 @@ class LoginPage(BasePage):
     _password_field = (By.ID, 'txtPassword')
     _login_button = (By.ID, 'btnLogin')
     _welcome_button = (By.ID, 'welcome')
+    #_employee_distribution_graphic = (By.ID, 'branding')
     
     def __init__(self, driver):
         super().__init__(driver)
@@ -16,3 +18,5 @@ class LoginPage(BasePage):
         self.find_element(*self._username_field).send_keys(username)
         self.find_element(*self._password_field).send_keys(password)
         self.find_element(*self._login_button).click()
+        #self.wait_visibility_element(*self._employee_distribution_graphic)
+        time.sleep(3)

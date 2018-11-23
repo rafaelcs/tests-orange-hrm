@@ -31,5 +31,5 @@ class BasePage():
         select.select_by_visible_text(option)
 
     def wait_visibility_element(self, *locator):
-        return WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((locator)))
+        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((locator)))
 
