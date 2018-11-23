@@ -3,4 +3,4 @@ This is a sample project to demonstrate how to automate web applications using P
 
 # Install 
 
-- You need to install `virtualenv`
+- You need to install `virtualenv`!
