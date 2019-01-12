@@ -7,10 +7,11 @@ from pages.admin.system_users import SystemUsers
 from selenium import webdriver
 import time
 
+@pytest.mark.smoke
 class TestAddUser:
     
     def setup_class(self):
-       self.driver = webdriver.Firefox()
+       self.driver = webdriver.Chrome()
        self.base_page = BasePage(self.driver)
        self.login_page = LoginPage(self.driver)
        self.system_users = SystemUsers(self.driver)

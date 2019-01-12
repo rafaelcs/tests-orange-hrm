@@ -8,7 +8,7 @@ import pytest
 class TestAssignLeaveToEmployee:
 
     def setup_class(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome()
         self.base_page = BasePage(self.driver)
         self.login_page = LoginPage(self.driver)
 
