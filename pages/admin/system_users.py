@@ -2,6 +2,7 @@ from pages.base.base_page import BasePage
 from selenium.webdriver.common.by import By
 import time
 
+
 class SystemUsers(BasePage):
 
     # Menu locators
@@ -16,7 +17,7 @@ class SystemUsers(BasePage):
     _status_dropdown = (By.ID, 'systemUser_status')
     _password_field = (By.ID, 'systemUser_password')
     _confirm_password_field = (By.ID, 'systemUser_confirmPassword')
-    
+
     def __init__(self, driver):
         super().__init__(driver)
 
@@ -30,5 +31,3 @@ class SystemUsers(BasePage):
         self.select_option(*self._status_dropdown, status)
         self.find_element(*self._employee_name_field).send_keys(password)
         self.find_element(*self._employee_name_field).send_keys(confirm_password)
-
-    

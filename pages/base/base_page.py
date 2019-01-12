@@ -4,8 +4,9 @@ from selenium.webdriver.support.wait import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
+
 class BasePage():
-    
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -20,7 +21,7 @@ class BasePage():
             return self.find_element(*locator).is_displayed()
         except NoSuchElementException:
             return False
-    
+
     def get_text(self, *locator):
         """Return text from specific element"""
         return self.find_element(*locator).text

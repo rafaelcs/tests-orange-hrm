@@ -1,4 +1,4 @@
 super_admin_credential = {
-        'username': 'Admin',
-        'password': 'admin123' 
+    'username': 'Admin',
+    'password': 'admin123'
 }

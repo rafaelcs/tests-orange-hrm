@@ -5,6 +5,7 @@ from data import login_data
 from selenium import webdriver
 import pytest
 
+
 class TestAssignLeaveToEmployee:
 
     def setup_class(self):

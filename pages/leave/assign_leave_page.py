@@ -1,12 +1,12 @@
 from pages.base.base_page import BasePage
-
 from selenium.webdriver.common.by import By
+
 
 class AssignLeavePage(BasePage):
 
     _assign_leave_button = (By.LINK_TEXT, 'Assign Leave')
 
-    #assign leave form
+    # assign leave form
     _employee_name_field = (By.ID, 'assignleave_txtEmployee_empName')
     _leave_type_dropdown = (By.ID, 'assignleave_txtLeaveType')
     _leave_balance_field = (By.ID, 'assignleave_leaveBalance')
